@@ -1,0 +1,143 @@
+<html>
+<head>
+	
+	<style>
+		* {
+			-moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+			user-select: none; 
+		}
+		.ddrpanel {
+			position:absolute;
+			background-color:blue;
+		}
+		
+		.resize {
+			position:absolute;
+			background-color:black;
+		}
+		
+		.panel-left.resize {
+			left:0px;
+			top:6px;
+			width:3px;
+			height:calc(100% - 12px);
+			cursor:w-resize;
+		}
+		
+		.panel-right.resize {
+			right:0px;
+			top:6px;
+			width:3px;
+			height:calc(100% - 12px);
+			cursor:e-resize;
+		}
+		
+		.panel-top.resize {
+			top:0px;
+			left:6px;
+			height:3px;
+			width:calc(100% - 12px);
+			cursor:n-resize;
+		}
+		
+		.panel-bottom.resize {
+			bottom:0px;
+			left:6px;
+			height:3px;
+			width:calc(100% - 12px);
+			cursor:s-resize;
+		}
+		
+		.panel-topleft {
+			position:absolute;
+			top:0px;
+			left:0px;
+			height:6px;
+			width:6px;
+			cursor:nw-resize;
+			background-color:pink;
+		}
+		
+		.panel-topright {
+			position:absolute;
+			top:0px;
+			right:0px;
+			height:6px;
+			width:6px;
+			cursor:ne-resize;
+			background-color:pink;
+		}
+		
+		.panel-bottomleft {
+			position:absolute;
+			bottom:0px;
+			left:0px;
+			height:6px;
+			width:6px;
+			cursor:sw-resize;
+			background-color:pink;
+		}
+		
+		.panel-bottomright {
+			position:absolute;
+			bottom:0px;
+			right:0px;
+			height:6px;
+			width:6px;
+			cursor:se-resize;
+			background-color:pink;
+		}
+		
+		.drag {
+			position:absolute;
+			background-color:grey;
+			cursor:move;
+		}		
+		
+		.panel-left.drag {
+			left:3px;
+			top:20px;
+			width:17px;
+			height:calc(100% - 40px);
+		}
+		
+		.panel-right.drag {
+			right:3px;
+			top:20px;
+			width:17px;
+			height:calc(100% - 40px);
+		}
+		
+		.panel-top.drag {
+			top:3px;
+			left:20px;
+			height:17px;
+			width:calc(100% - 40px);
+		}
+		
+		.panel-bottom.drag {
+			bottom:3px;
+			left:20px;
+			height:17px;
+			width:calc(100% - 40px);
+		}
+		
+		.ddrpanel.docked {
+			background-color:red;
+		}
+		
+		.ddrpanel.buffer {
+			background-color:green;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	
+	<script src="test.js"></script>
+</body>
+</html>
